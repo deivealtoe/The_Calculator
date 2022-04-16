@@ -1,16 +1,14 @@
-# the_calculator
+# The Calculator
 
-A new Flutter project.
+Criado utilizando Flutter 🔥
 
-## Getting Started
+## Sobre
 
-This project is a starting point for a Flutter application.
+Esse projeto é uma calculadora simples 😊
 
-A few resources to get you started if this is your first Flutter project:
+Usando:
+- 1️⃣ Escolher um número
+- 2️⃣ Escolher um operador
+- 3️⃣ Escolher outro número
+- 4️⃣ Escolher = para mostrar o resultado
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

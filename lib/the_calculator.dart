@@ -10,8 +10,8 @@ class TheCalculator extends StatefulWidget {
 }
 
 class _TheCalculatorState extends State<TheCalculator> {
-  int firstNumber = 0;
-  int secondNumber = 0;
+  num firstNumber = 0;
+  num secondNumber = 0;
   String history = '';
   String textToDisplay = '';
   String result = '';
@@ -41,11 +41,13 @@ class _TheCalculatorState extends State<TheCalculator> {
         buttonValue == '-' ||
         buttonValue == 'X' ||
         buttonValue == '/') {
-      firstNumber = int.parse(textToDisplay);
+      firstNumber = num.parse(textToDisplay);
       result = '';
       operation = buttonValue;
+    } else if (buttonValue == '.') {
+      result = textToDisplay + '.';
     } else if (buttonValue == '=') {
-      secondNumber = int.parse(textToDisplay);
+      secondNumber = num.parse(textToDisplay);
 
       if (operation == '+') {
         result = (firstNumber + secondNumber).toString();
@@ -69,7 +71,7 @@ class _TheCalculatorState extends State<TheCalculator> {
             secondNumber.toString();
       }
     } else {
-      result = int.parse(textToDisplay + buttonValue).toString();
+      result = num.parse(textToDisplay + buttonValue).toString();
     }
 
     setState(() {
@@ -270,7 +272,7 @@ class _TheCalculatorState extends State<TheCalculator> {
                   callback: buttonOnClick,
                 ),
                 CalculatorButton(
-                  text: '00',
+                  text: '.',
                   fillColor: 0xFFFDE9D0,
                   textColor: 0xFF000000,
                   textSize: 20,
