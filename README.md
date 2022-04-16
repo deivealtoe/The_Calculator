@@ -12,3 +12,4 @@ Usando:
 - 3️⃣ Escolher outro número
 - 4️⃣ Escolher = para mostrar o resultado
 
+<img src="./gif/the_calculator.gif" style="height: 650px;">
